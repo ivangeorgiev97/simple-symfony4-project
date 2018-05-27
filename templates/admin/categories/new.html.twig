@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+        <h3>New article</h3>
+
+        <hr class="hr">
+
+        {% if errors %}
+        <ul>
+            {% for error in errors %}
+                <li>{{ error.message }}</li>
+                {% endfor %}
+        </ul>
+        {% endif %}
+
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}

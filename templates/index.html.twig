@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <img style="max-width: 100%;" class="img-fluid" src="{{ asset('images/binary-2925964_1920.jpg') }}">
+    
+    <div id="home" class="container">
+        <div class="row">
+            <div class="home-content col-md-4">
+                <img class="img-fluid" src="{{asset('images/news-2389226_640.png')}}">
+                <h4>Blog</h4>
+                <p>Click on the "Blog" button if you want to read articles about almost everything!</p>
+                <a href="/blog"><button class="btn btn-primary">Blog</button></a>
+            </div>
+            <div class="home-content col-md-4">
+                <img class="img-fluid" src="{{asset('images/list-2389219_640.png')}}">
+                <h4>Portfolio</h4>
+                <p>Click on the "Portfolio" button if you want to see my finished projects!</p>
+                <a href="/portfolio"><button class="btn btn-primary">Portfolio</button></a>
+            </div>
+            <div class="home-content col-md-4">
+                <img class="img-fluid" src="{{asset('images/chat-2389223_640.png')}}">
+                <h4>Contact</h4>
+                <p>Click on the "Contact" button if you want to send me a message!</p>
+                <a href="/contact"><button class="btn btn-primary">Contact</button></a>
+            </div>
+        </div>
+                
+    </div>
+    
+{% endblock %}

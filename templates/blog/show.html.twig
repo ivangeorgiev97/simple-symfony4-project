@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    <div id="blog" class="container">
+
+        <div class="post">
+            <article>
+                <h1 class="postHeading"><a href="/blog/post/{{ post.id }}">{{ post.title }}</a></h1>
+            <hr class="hr">
+            <div class="postContent">{{ post.content }}</div>
+            <br>
+            <div class="postDescription"><b>Category:</b> <a href="{{post.category.id}}">{{ post.category.category_name }}</a> | 
+                <b>Posted on:</b> {{ post.created_at|date('d/m/Y H:i:s') }} |  
+                <b>Last edited on:</b> {{ post.updated_at|date('d/m/Y H:i:s') }}
+            </div>
+            </article>
+        </div>
+
+    </div>
+    
+{% endblock %}

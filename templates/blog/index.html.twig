@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    <div id="blog" class="container">
+        {% for post in posts %}
+        <div class="post">
+            <article>
+                <h1 class="postHeading"><a href="{{ path('blog_post_show', {'id': post.id}) }}">{{ post.title }}</a></h1>
+            <hr class="hr">
+            <div class="postContent">{{ post.content[0:400] }}... <a href="/blog/post/{{ post.id }}">Read More</a></div>
+            <br>
+            <div class="postDescription"><b>Category:</b> <a href="{{ path('blog_category_show', {'category_id': post.category.id}) }}">{{ post.category.category_name }}</a> | 
+                <b>Posted on:</b> {{ post.created_at|date('d/m/Y H:i:s') }} |  
+                <b>Last edited on:</b> {{ post.updated_at|date('d/m/Y H:i:s') }}
+            </div>
+            </article>
+        </div>
+        {% endfor %}
+        
+        {{ knp_pagination_render(posts) }}
+    </div>
+    
+{% endblock %}
+
+    
+    

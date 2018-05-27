@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    <div style="margin-top: 100px; text-align: center;" class="container">
+        <span style="font-size: 36px;">Admin Dashboard</span>
+        <hr class="hr">
+        <div class="row">
+               <div class="col-md-4">
+                   <a href="{{ path('admin_categories') }}"><button class="btn btn-primary">Manage Categories</button></a>
+               </div>
+        </div>
+    </div>
+
+{% endblock %}

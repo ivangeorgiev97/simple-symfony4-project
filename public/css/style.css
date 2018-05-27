@@ -1,0 +1,63 @@
+body {
+    min-height: 100%;
+}
+
+#content {
+   margin-bottom: 70px;
+}
+
+#home {
+    margin-top: 35px;
+}
+
+.home-content {
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#about {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#aboutHeading {
+    font-family: Roboto;
+    font-size: 72px;
+}
+
+#aboutDescription {
+    font-family: Verdana;
+    text-align: left!important;
+}
+
+#blog {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.postHeading {
+    font-family: Roboto;
+}
+
+.postHeading a{
+    text-decoration: none;
+    color: black;
+}
+
+.postContent {
+    font-family: Verdana;
+    text-align: left;
+    font-size: 18px;
+}
+
+.post {
+    margin-top: 50px;
+}
